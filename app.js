@@ -15,9 +15,21 @@ $(document).ready(function() {
     }
   ];
 
-  for(var i = 0; i < allQuestions.length; i++) {
-    alert(allQuestions[i].question + allQuestions[i].choices[allQuestions[i].correctAnswer]);
+  var firstQuestion = allQuestions[0];
+
+  $("body").append("<h2>" + firstQuestion.question + "</h2>");
+  
+  $("body").append("<ol />");
+
+  for(var i = 0; i < firstQuestion.choices.length; i++) {
+    $("ol").append("<li>" + firstQuestion.choices[i] + "</li>");
   }
+
+
+
+  // for(var i = 0; i < allQuestions.length; i++) {
+  //   alert(allQuestions[i].question + allQuestions[i].choices[allQuestions[i].correctAnswer]);
+  // }
 
 
 
