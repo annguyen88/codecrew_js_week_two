@@ -115,4 +115,4 @@
         // basic call
         new Quiz(allQuestions);
     });
-})(typeof $ == 'function' && $().jquery == 'string' ? $ : jQuery);
+})(typeof $ == 'function' && typeof $().jquery == 'string' ? $ : jQuery);
